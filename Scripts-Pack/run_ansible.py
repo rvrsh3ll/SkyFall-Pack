@@ -78,6 +78,7 @@ def main():
 
     protocol            = "http" if args.http else "https"
     custom_header_lower = convert_header(args.custom_header)
+    args.custom_header_lower = custom_header_lower  # FIX: Store in args namespace
 
     # -------------------------------
     # CHECK ANSIBLE
